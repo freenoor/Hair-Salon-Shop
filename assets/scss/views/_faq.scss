@@ -1,0 +1,26 @@
+.faq_text{
+    margin-top: 100px;
+    text-align: center;
+    h3{
+        font-size: 36px;
+        color: #686868;
+        margin-bottom: 35px;
+        position: relative;
+        padding-bottom: 35px;
+        margin-top: 50px;
+        &:before{
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 50px;
+            background: #bb547f;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    p{
+        font-size: 24px;
+        color: #686868;
+    }
+}

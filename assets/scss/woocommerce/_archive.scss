@@ -1,0 +1,57 @@
+.woocommerce{
+    .products{
+        .product{
+            &:hover{
+                a{
+                    img{
+                        transform: rotate(-7deg);
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+            }
+            a{
+                img{
+                    height: 400px !important;
+                    width: 100%;
+                    object-fit: cover;
+                    transition: 0.3s ease-in-out;
+                }
+                .justborder{
+                    position: absolute;
+                    top: 20px;
+                    bottom: 40px;
+                    left: 20px;
+                    right: 20px;
+                    border: 2px solid #fbb040;
+                  
+                    .price_title{
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                        background: #fbb040;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: baseline;
+                        h2{
+                            font-size: 18px;
+                            color: white;
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            @media (min-width: 768px) and (max-width: 991px){
+                                font-size: 16px;
+                            }
+                        }
+                        span{
+                            font-size: 18px;
+                            color: white;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+            .button{
+                display: none;
+            }
+        }
+    }
+}

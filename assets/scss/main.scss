@@ -1,0 +1,278 @@
+@import 'global/mixins';
+@import 'partials/header';
+@import 'partials/footer';
+
+
+@import 'views/home';
+@import 'views/uber';
+@import 'views/faq';
+@import 'views/kontakt';
+
+
+@import 'woocommerce/archive';
+@import 'woocommerce/single_product';
+@import 'views/cart';
+@import 'views/impressum';
+@import 'views/shop';
+@import 'responsive/responsive';
+
+.welcome_div_left{
+    position: absolute;
+    top: 33%;
+    left: 44%;
+    width: 532px;
+    background: #fbb040;
+    padding: 40px 20px;
+    -webkit-transform: translate(-80%, -50%);
+    transform: translate(-79%, -33%);
+    text-align: left;
+    color: white;
+    -webkit-box-shadow: -6px 8px 14px -9px black;
+    box-shadow: -6px 8px 14px -9px black;
+    .content_left{
+        h2{
+            font-size: 24px;
+            padding-bottom: 20px;
+            font-weight: 600;
+        }
+        p{
+            font-size: 14px;
+            padding-bottom: 20px;
+        }
+        a{
+            background: #bb547f;
+            border: 1px solid #bb547f;
+            color: white;
+            font-weight: 600;
+            padding: 10px 30px;
+            border-radius: 20px;
+            transition: .3s ease;
+            &:hover{
+                text-decoration: none;
+                background-color: #fff;
+                color: #bb547f;
+            }
+        }
+
+    }
+}
+#reviews,
+#tab-description{
+    color: #686868;
+    h2{
+        color: #686868;
+        font-family: 'Roboto', sans-serif;
+        padding: 5px 0px;
+    }
+    textarea{
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
+
+
+.image_rev{
+    width: 120px !important;
+    @media(max-width: 575px){
+        width: 170px!important;
+        height: 160px!important;
+        margin: 0 10px;
+    }
+}
+.slider-for{
+    min-height: 200px;
+    .slick-slide{
+        height: 100%!important;
+    }
+}
+.slider-nav{
+    @media(max-width: 575px){
+        margin: 50px 0px;
+    }
+}
+.reviews{
+    .slider-nav .draggable{
+        @media(min-width: 768px){
+            width: 343px !important;
+            margin: 0 auto;
+            padding: 0 !important;
+        }
+        @media(max-width: 100%){
+            width: 100%;
+        }
+    }
+    
+    
+    .slick-prev, .slick-next{
+        display: none !important;
+    }
+    .slider-nav{
+        .slick-slide{
+            height: 100px !important;
+            @media(max-width: 575px){
+                height: 160px!important;
+            }
+            img{
+                opacity: 0.7;
+                @media(max-width: 575px){
+                    width: 100%;
+                    height: 100%!important;
+                }
+            }
+        }
+    }    
+    .slick-center{
+        height: 70px;
+        img{
+            width: 70px;
+            height: 70px;
+            opacity: 1;
+            @media(max-width: 575px){
+                width: 100%;
+                height: 100%!important;
+            }
+        }
+    }
+}
+
+
+.title_rev{
+    padding: 0 100px;
+    @media(max-width: 575px){
+        padding: 0;
+        min-height: 200px;
+        text-align: center;
+    }
+}
+
+
+
+.default{
+    .widget{
+        list-style: none;
+        .widgettitle{
+            display: none;
+        }
+        .product-categories{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            .cat-item{
+                a{
+                    color: #afafaf;
+                    font-size: 20px;
+                    position: relative;
+                    padding-right: 20px;
+                    
+                    &::after{
+                        content: "/";
+                        position: absolute;
+                        right: 10px;
+                    }
+                }
+                &:first-child{
+                    color:#fbb040;
+                    border-bottom: 1px solid #fbb040;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+
+.top_shop{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    .woocommerce-ordering{
+        .orderby{
+            border: none;
+            color: #c3c3c3;
+            font-size: 20px;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    .category_shop{
+        list-style: none;
+        li{
+            h2{
+                display: none;
+            }
+            .product-categories{
+                list-style: none;
+                padding: 0;
+                display: flex;
+                .current-cat{
+                    a{
+                        color: #fbb040 !important;
+                        font-weight: bold;
+                        border-bottom: 1px solid #fbb040;
+                    }
+                }
+                .cat-item{
+                    margin-right: 10px;
+                    &:hover{
+                        a{
+                            color: #fbb040 !important;
+                        }
+                    }
+                    a{
+                        color: #afafaf;
+                        text-decoration: none;
+                        font-size: 20px;
+                    }
+                    &:after{
+                        margin-left: 10px;
+                        content: "/";
+                        color: #afafaf;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.woocommerce #sidebar,.woocommerce-breadcrumb{
+    display: none;
+}
+
+.search_section{
+    .widget{
+        list-style: none;
+        .woocommerce-product-search{
+            position: relative;
+            .search-field{
+                border: 1px solid #686868 !important;
+                border-radius: 15px;
+                padding: 3px 15px;
+                &:focus{
+                    outline: none;
+                }
+            
+        }
+        button{
+            width: 0px;
+            overflow: hidden;
+            color: white;
+            background: white;
+            border: none;
+            
+            &:after{
+                content: "";
+                position: absolute;
+                top: 5px;
+                right: 27px;
+                z-index: 9999;
+                background-image: url(/stars_hair/wp-content/uploads/2020/01/ICON.png);
+                width: 20px;
+                height: 20px;
+            }
+        }
+        }
+        
+    }
+}

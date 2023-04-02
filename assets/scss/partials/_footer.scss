@@ -1,0 +1,162 @@
+.footersection{
+    background: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 20px;
+    .overly{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.7);
+    }
+    .border{
+        border: 2px solid white !important;
+        position: relative;
+        padding: 40px;
+        @media(max-width: 575px){
+            padding: 10px;
+        }
+    }
+    .logo{
+        height: 100%;
+        @media(max-width: 767px){
+            height: 100px;
+        }
+      img{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+    .test{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: fit-content;
+        h4{
+            text-align: center;
+            color: white;
+            padding-bottom: 40px;
+        }
+    }
+    .subscripe{
+        h4{
+            text-align: center;
+            color: white;
+            padding-bottom: 40px;
+        }
+        .tnp-submit{
+            background: #bb547f;
+            border: 1px solid #bb547f;
+            transition: 0.3s ease-in-out;
+            &:hover{
+                background: white;
+                color: #bb547f;
+                transition: 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
+
+.svg_phone{
+    svg{
+        width: 35px;
+        height: 35px;
+        path{
+            fill:white;
+        }
+        circle{
+            fill: white;
+        }
+    }
+}
+
+.kontakt,.email,.adress{
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+    @media(max-width: 767px){
+        flex-direction: column;
+        text-align: center;
+    }
+    .svg_phone{
+        margin-right: 10px;
+    }
+    a{
+        color: white;
+        transition: .2s ease;
+        &:hover{
+            text-decoration: none;
+            filter: brightness(130%);
+        }
+    }
+    p{
+        color: white;
+        margin-bottom: 0;
+    }
+}
+
+.subscripe_{
+    list-style: none;
+}
+
+.tnp-field-email{
+    label{
+        display: none !important;
+    }
+}
+.tnp-field-button{
+    input{
+        transition: .3s ease;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+
+.copyright{
+    background: black;
+    padding: 10px;
+    .tt{
+        justify-content: space-between;
+        color: white;
+        padding-top: 15px;
+        text-align: center;
+    }
+    ul{
+        padding: 0;
+    }
+    p{
+        margin-bottom: 0;
+    }
+    li{
+        list-style-type: none;
+        a{
+            color: #fff;
+            transition: .3s ease;
+            border-bottom: 1px solid transparent;
+            &:hover{
+                text-decoration: none;
+                border-color: #fff;
+            }
+        }
+    }
+}
+.left_copy{
+    @media(max-width: 575px){
+        margin-bottom: 10px;
+    }
+}
+.right_copy{
+    @media(max-width: 575px){
+        width: 100%;
+        text-align: center;
+    }
+}

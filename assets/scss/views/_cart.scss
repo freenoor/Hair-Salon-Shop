@@ -1,0 +1,44 @@
+.ld_cart{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 80px 0px;
+    .product-name{
+        a{
+            color: #bb547f;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+    .checkout-button{
+        background-color: #bb547f!important;
+        transition: .3s ease;
+        &:hover{
+            cursor: pointer;
+            filter: brightness(80%);
+        }
+    }
+    form{
+        margin-bottom: 40px;
+    }
+}
+.ld_checkout{
+    display: flex;
+    margin: 80px 0px;
+    .notes{
+        display: flex;
+        flex-direction: column;
+    }
+    .woocommerce-input-wrapper{
+        width: 100%;
+        input,
+        .select2-selection,
+        textarea{
+            border-style: solid;
+            border-color: #686868;
+            border-width: 1px;
+            padding: 5px;
+            border-radius: 5px;
+            height: 40px;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+@media(max-width: 991px){
+    .navbar{
+        width: 65%;
+    }
+    .shop-inputs{
+        width: 35%;
+        .search{
+            width: 80%;
+            form{
+                width: 100%;
+                margin-right: 0;
+                input{
+                    width: 100%;
+                    margin-right: 0;
+                }
+                button{
+                    right: 7px;
+                }
+            }
+        }
+        .cart{
+            width: 15%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+@media(max-width: 767px){
+    .logospace{
+        width: 12%;
+    }
+    .menu_header{
+        width: 88%!important;
+        .navbar{
+            width: auto;
+        }
+        .shop-inputs{
+            width: 80%;
+            .search{
+                justify-content: center;
+            }
+        }
+        .collapsing{
+            min-height: 1px;
+            position: absolute;
+            top: 100%;
+            z-index: 9999;
+            background-color: black;
+            transition: .3s ease;
+            right: 0;
+            .navbar-nav{
+                margin-right: 0;
+                padding: 10px 15px;
+                li{
+                    padding: 5px;
+                    @media(max-width: 767px){
+                        width: 100%;
+                    }
+                }
+                .current-menu-item a:after{
+                    bottom: 0;
+                }
+            }
+        }
+        .collapse{
+            height: auto!important;
+            position: absolute;
+            min-height: 150px;
+            top: 100%;
+            z-index: 9999;
+            background-color: black;
+            right: 0;
+            .navbar-nav{
+                margin-right: 0;
+                padding: 10px 15px;
+                li{
+                    padding: 5px;
+                    @media(max-width: 767px){
+                        width: 100%;
+                    }
+                }
+                .current-menu-item a:after{
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 575px){
+    .menu_header{
+        .shop-inputs{
+            flex-direction: row-reverse;
+        }
+    }
+}

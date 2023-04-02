@@ -1,0 +1,54 @@
+.top_shop{
+    flex-wrap: wrap;
+    .category_shop{
+        .cat-item {
+            @media(max-width: 575px){
+                margin-right: 5px!important;
+                &::after{
+                    margin-left: 5px!important;
+                }
+            }
+            a {
+                @media(max-width: 375px){
+                    font-size: 18px!important;
+                }
+                @media(max-width: 345px){
+                    font-size: 16px!important;
+                }
+            }
+        }
+    }
+    .woocommerce-ordering{
+        @media(max-width: 575px){
+            width: 100%;
+            select{
+                width: 100%;
+            }
+        }
+    }
+    .search_section{
+        @media(max-width: 575px){
+            width: 100%;
+            input{
+                width: 100%;
+            }
+        }
+    }
+}
+.products{
+    .product{
+        a{
+            .justborder{
+                @media(min-width: 768px) and (max-width: 991px){
+                    top: 10px!important;
+                    bottom: 25px!important;
+                    left: 10px!important;
+                    right: 10px!important;
+                }
+            }
+        }
+        @media(max-width: 575px){
+            width: 100%!important;
+        }
+    }
+}
